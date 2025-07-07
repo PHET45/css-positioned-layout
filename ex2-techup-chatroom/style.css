@@ -14,10 +14,13 @@ body {
 }
 
 .chatroom {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   width: 100vw;
-  height: 90vh;
   min-height: 600px;
+  padding: 40px 0;
+  position: relative;
 }
 
 .messages-right {
@@ -32,11 +35,11 @@ body {
 }
 
 .message.right {
+  align-self: flex-end;
   max-width: 320px;
   min-width: 220px;
   padding: 14px 24px;
   border-radius: 24px;
-  margin-bottom: 0;
   font-size: 1.2rem;
   display: flex;
   align-items: center;
@@ -89,16 +92,14 @@ body {
 }
 
 .message.left {
-  position: relative;
-  left: 20px;
-  margin-top: 180px;
+  align-self: flex-start;
   background: #858585;
   color: #fff;
   border-radius: 24px;
   padding: 12px 24px;
   font-size: 1.5rem;
   width: 220px;
-  margin-bottom: 12px;
+  margin-bottom: 0;
   display: flex;
   align-items: center;
   justify-content: flex-start;
